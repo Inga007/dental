@@ -1,0 +1,242 @@
+:root {
+  --text-color: #2751da;
+  --bg-color: rgba(238, 252, 206, 0.4);
+}
+.main__container {
+  border-radius: 2rem;
+  display: flex;
+  margin-top: 4rem;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  align-items: center;
+
+  color: var(--text-color);
+  background: var(--bg-color);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tab__header {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 1rem;
+}
+
+.tab__header li {
+  flex: 1;
+  cursor: pointer;
+  padding: 1rem;
+  border: 2px solid var(--text-color);
+  text-align: center;
+  border-radius: 12px;
+  /* border-top-right-radius: 100%;
+  border-top-left-radius: 100%; */
+  font-size: 1rem;
+}
+
+.tab__container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+
+  border-radius: 1rem;
+
+  box-shadow:  -3px -3px 3px rgba(0, 0, 0, 0.2),
+     3px 3px 3px rgba(0, 0, 0, 0.2);
+  gap: 2rem;
+}
+
+.tab__content {
+  padding: 1rem;
+
+  /* border: 2px solid var(--text-color); */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 2rem;
+}
+
+.tab__content p {
+font-size: 20px;
+  text-align: center;
+}
+
+.active {
+  background: var(--text-color);
+
+  color: #fff;
+}
+.questionBtn{
+   border-radius: 2rem;
+  display: flex;
+ 
+  padding: 0.5rem 1.5rem;
+  align-items: center;
+border: 1px solid  var(--text-color);
+  color: var(--text-color);
+  background: var(--bg-color);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  margin: 30px auto;
+
+}
+.lines{
+  display: flex;
+}
+.lines p{
+  width: 120px;
+}
+.lines input{
+  margin-right: 8px;
+}
+.nums{
+  padding-left: 112px;
+}
+.nums span{
+  margin-left: 5px;
+}
+.fourBlocks{
+  border: 1px solid rgb(207, 197, 197);
+  padding: 10px;
+  
+}
+.gridBlocks{
+display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+
+}
+.svgTooth{
+  width: 22px;
+}
+.nums svg{
+
+  height: 25px;
+}
+.quesion_header{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.quesions{
+  display: grid;
+  align-items: center;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  
+
+}
+.quesionBox{
+display: flex;
+margin-top: 15px;
+align-items: center;
+}
+.quesionBox p{
+ padding: 10px;
+  border: 1px solid rgb(182, 178, 178);
+  border-radius: 12px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.quesions label{
+   display: flex;
+   flex-direction: column;
+   margin-left: 15px;
+}
+
+
+.tooth-wrapper {
+  display: inline-block;
+  position: relative;
+   padding-left: 114px;
+}
+
+.tooth-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+}
+.tooth-icon svg{
+  width: 20px;
+  height: 23px;
+  margin-left: 1px;
+   overflow: hidden;
+}
+.mark {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* so clicks pass through */
+}
+.clientData{
+display: flex;
+  justify-content: center;
+}
+.clientData p{
+  padding: 5px 10px;
+  border: 1px solid steelblue;
+  margin: 5px 10px;
+  border-radius: 8px;
+  
+}
+@media screen and (max-width: 1000px) {
+  .main__container {
+    gap: 2rem;
+    padding: .5rem;
+  }
+
+  .tab__header {
+    flex-wrap: wrap;
+  }
+
+  .tab__content {
+    gap: 2rem;
+  }
+  .tab__header li {
+    font-size: 1.6rem;
+  }
+
+  .tab__container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .tab__content p {
+    font-size: 1.6rem;
+  }
+  .tab__content{
+    overflow-x: scroll;
+  }
+}
+@media(max-width: 700px){
+  .gridBlocks {
+  
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(4,1fr);
+}
+table {
+        display: block;
+        overflow-x: scroll;}
+.quesions {
+  
+    grid-template-columns: 1fr;
+}
+.clientData{
+flex-wrap: wrap;
+}
+.tab__container table{
+  margin-left: 580px;
+
+}
+.tab__container{
+  padding: 0.5rem;
+}
+}

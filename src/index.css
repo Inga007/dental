@@ -1,0 +1,13 @@
+.ReactModal__Overlay .ReactModal__Overlay--after-open{
+background-color: rgb(152 147 147 / 75%);
+}
+.ReactModal__Content.ReactModal__Content--after-open{
+border-radius: 10px;
+
+}
+@media(max-width: 568px){
+
+.ReactModal__Content.ReactModal__Content--after-open{
+  width: 90%!important;
+}
+}

@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    /* background: linear-gradient(45deg, #6b8cee,transparent, #b5b5f5,transparent, #94BBE9); */
+    min-height: 100vh;
+    padding-top: 50px;
+}
